@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="627.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.ExtratoController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/styles/extrato.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="504.0" fitWidth="697.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../extrato.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="167.0" layoutX="284.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../titulo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tvw_extrato" layoutX="43.0" layoutY="128.0" prefHeight="288.0" prefWidth="616.0" style="-fx-border-color: black;" />
+      <ComboBox fx:id="cmb_filtro_tipos" layoutX="152.0" layoutY="89.0" prefHeight="27.0" prefWidth="141.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 3; -fx-border-radius: 3;" />
+      <Label layoutX="86.0" layoutY="92.0" text="Filtrar por">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="92.0" text="Filtro">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_filtro" layoutX="382.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 3; -fx-border-radius: 3;" />
+      <Circle fill="#409015" layoutX="40.0" layoutY="33.0" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ImageView fx:id="btn_voltarMenu" fitHeight="35.0" fitWidth="48.0" layoutX="14.0" layoutY="432.0" onMouseClicked="#voltarMenu" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../../../5774594.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_estornar" layoutX="202.0" layoutY="435.0" mnemonicParsing="false" onAction="#estornarValor" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #006400; -fx-background-radius: 25; -fx-border-radius: 25;" text="ESTORNAR VALOR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_alterar" layoutX="384.0" layoutY="435.0" mnemonicParsing="false" onAction="#alterarData" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #38C725; -fx-background-radius: 25; -fx-border-radius: 25;" text="ALTERAR DATA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="btn_filtro" fitHeight="79.0" fitWidth="42.0" layoutX="536.0" layoutY="84.0" onMouseClicked="#realizarFiltro" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../lupa,png.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="607.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.MeusCartoesController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/styles/meuscartoes.css" />
+    </stylesheets>
+    <children>
+        <ImageView fitHeight="405.0" fitWidth="607.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../fundoCart.png" />
+            </image>
+        </ImageView>
+
+        <!-- Área para exibir os cartões -->
+        <ScrollPane layoutX="152.0" layoutY="60.0" prefHeight="338.0" prefWidth="451.0" style="-fx-background-color: white;">
+            <content>
+                <FlowPane fx:id="cartoesPane" alignment="CENTER" hgap="10" prefWrapLength="446.0" style="-fx-padding: 10;" vgap="10">
+                    <!-- Cartões serão adicionados aqui -->
+                </FlowPane>
+            </content>
+        </ScrollPane>
+
+        <!-- Labels e outros elementos visuais -->
+        <Label layoutX="27.0" layoutY="129.0" text="Adicionar Cartão">
+            <font>
+                <Font name="Cambria Math" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="27.0" layoutY="215.0" prefHeight="0.0" prefWidth="87.0" text="Adicionar Cartão">
+            <font>
+                <Font name="Cambria Math" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="36.0" layoutY="229.0" text="virtual débito">
+            <font>
+                <Font name="Cambria Math" size="12.0" />
+            </font>
+        </Label>
+
+        <ImageView fitHeight="64.0" fitWidth="270.0" layoutX="181.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../carts.png" />
+            </image>
+        </ImageView>
+
+        <Circle fill="WHITE" layoutX="152.0" layoutY="28.0" radius="18.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+        <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="136.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../Imagem7.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="btn_voltarMenu" fitHeight="24.0" fitWidth="26.0" layoutX="17.0" layoutY="360.0" onMouseClicked="#voltarMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../5774594.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+          <ImageView fx:id="btn_criar_cartao" fitHeight="54.0" fitWidth="51.0" layoutX="45.0" layoutY="78.0" onMouseClicked="#addCartao" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;">
+              <image>
+                  <Image url="@../../../../add.png" />
+              </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+          </ImageView>
+      <ImageView fx:id="btn_cartao_v_debito" fitHeight="54.0" fitWidth="51.0" layoutX="45.0" layoutY="165.0" onMouseClicked="#addCartaoVirtualDebito" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;">
+         <image>
+            <Image url="@../../../../add.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="btn_cartao_v_credito" fitHeight="54.0" fitWidth="51.0" layoutX="45.0" layoutY="255.0" onMouseClicked="#addCartaoVirtualCredito" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;">
+         <image>
+            <Image url="@../../../../add.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="319.0" text="virtual crédito">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="305.0" prefHeight="0.0" prefWidth="87.0" text="Adicionar Cartão">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

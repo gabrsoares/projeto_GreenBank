@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="506.0" maxWidth="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="777.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.DadosCartaoController">
+   <children>
+      <ImageView fitHeight="498.0" fitWidth="752.0" layoutX="23.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../fundo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="278.0" layoutY="148.0" text="TITULAR:" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nome" editable="false" layoutX="278.0" layoutY="172.0" prefHeight="25.0" prefWidth="197.0" style="-fx-background-color: # 949494;" />
+      <Label layoutX="276.0" layoutY="216.0" text="TIPO DO CARTÃO:" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_numero" editable="false" layoutX="279.0" layoutY="314.0" prefHeight="25.0" prefWidth="197.0" style="-fx-focus-color: green;" />
+      <Label layoutX="530.0" layoutY="217.0" text="DATA DE VALIDADE:" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_cod_seg" editable="false" layoutX="529.0" layoutY="313.0" prefHeight="25.0" prefWidth="197.0" style="-fx-focus-color: green;" />
+      <TextField fx:id="txt_cpf" editable="false" layoutX="529.0" layoutY="173.0" prefHeight="25.0" prefWidth="197.0" style="-fx-focus-color: green;" />
+      <Label layoutX="531.0" layoutY="148.0" text="CPF" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="289.0" text="NÚMERO:" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="537.0" layoutY="289.0" text="CÓDIGO DE SEGURANÇA:" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_enviar" layoutX="414.0" layoutY="389.0" mnemonicParsing="false" onAction="#alterarOuRemoverCartao" prefHeight="41.0" prefWidth="197.0" style="-fx-background-color: FF1515; -fx-background-radius: 30;" text="EXCLUIR" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="287.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imagem7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="635.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imagem7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="283.0" layoutX="347.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../FOTO.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_tipo" editable="false" layoutX="276.0" layoutY="241.0" prefHeight="25.0" prefWidth="197.0" style="-fx-focus-color: green;" />
+      <ComboBox fx:id="cmb_data" layoutX="529.0" layoutY="238.0" prefHeight="25.0" prefWidth="197.0" style="-fx-background-color: white;" />
+      <Button fx:id="lbl_editar" layoutX="498.0" layoutY="84.0" mnemonicParsing="false" onAction="#editarDados" style="-fx-background-color: transparent;" text="Alterar dados" textFill="#38c725">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="377.0" layoutY="89.0" text="Notou algo errado ?" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="WHITE" layoutX="726.0" layoutY="459.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="707.0" layoutY="441.0" onMouseClicked="#voltarCartoes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../5774594.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@/br/com/fatec/styles/cadastro.css" />
+   </stylesheets>
+</AnchorPane>

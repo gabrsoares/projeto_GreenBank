@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.PixController">
+   <children>
+      <AnchorPane fx:id="tela_contatos" prefHeight="428.0" prefWidth="318.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="121.0" layoutY="188.0" prefHeight="20.0" prefWidth="82.0" text="Contato:">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font></Label>
+            <ComboBox fx:id="cmb_contatos" layoutX="45.0" layoutY="217.0" prefHeight="35.0" prefWidth="201.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, -2); -fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 4;" />
+            <Button fx:id="btn_outros_contatos" layoutX="64.0" layoutY="312.0" mnemonicParsing="false" onAction="#pixManual" prefHeight="35.0" prefWidth="201.0" style="-fx-background-color: #38C725; -fx-background-radius: 25;" text="ADICIONAR OUTRO CONTATO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fx:id="lbl_voltar" fitHeight="35.0" fitWidth="29.0" layoutX="14.0" layoutY="388.0" onMouseClicked="#voltarMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../5774594.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="39.0" layoutY="102.0" prefHeight="30.0" prefWidth="246.0" text="Realizar pix para:" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="btn_contatos" fitHeight="29.0" fitWidth="29.0" layoutX="263.0" layoutY="220.0" onMouseClicked="#pixContato" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../ok.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane layoutY="-1.0" prefHeight="86.0" prefWidth="318.0" style="-fx-background-color: #409015;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="218.0" layoutX="49.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Imagem20.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="55.0" fitWidth="43.0" layoutX="10.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Imagem7.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="55.0" fitWidth="43.0" layoutX="260.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Imagem7.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="tela_pix" layoutX="-2.0" layoutY="-1.0" prefHeight="444.0" prefWidth="325.0">
+         <children>
+            <ImageView fitHeight="435.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../pix.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="98.0" layoutX="144.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../pix_titulo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="119.0" layoutY="95.0" text="Chave Pix:">
+               <font>
+                  <Font name="Cambria Math" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_cpf" layoutX="45.0" layoutY="122.0" prefHeight="35.0" prefWidth="218.0" />
+            <Label layoutX="128.0" layoutY="181.0" text="Valor:">
+               <font>
+                  <Font name="Cambria Math" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_valor" layoutX="47.0" layoutY="207.0" prefHeight="35.0" prefWidth="218.0" />
+            <Label layoutX="119.0" layoutY="269.0" text="Tipo de conta:">
+               <font>
+                  <Font name="Cambria Math" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmb_tipo" layoutX="47.0" layoutY="299.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: white; -fx-border-color: lightgrey; -fx-border-radius: 4; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, -2);" />
+            <Button fx:id="btn_confirmar" layoutX="85.0" layoutY="369.0" mnemonicParsing="false" onAction="#realizarPix" prefHeight="35.0" prefWidth="143.0" style="-fx-background-color: #38C725; -fx-background-radius: 25;" text="CONFIRMAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="lbl_voltar1" fitHeight="35.0" fitWidth="29.0" layoutX="12.0" layoutY="386.0" onMouseClicked="#voltarMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../5774594.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Circle fill="#409015" layoutX="35.0" layoutY="32.0" radius="24.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

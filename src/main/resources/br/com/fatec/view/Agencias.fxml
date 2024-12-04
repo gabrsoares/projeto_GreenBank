@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="609.0" style="-fx-background-color: green;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.AgenciasController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/styles/agencias.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="144.0" layoutY="21.0" text="Escolha a sua agência" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="28.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb_num_agencias" layoutX="422.0" layoutY="24.0" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: white;" />
+      <TableView fx:id="tvw_agencias" layoutX="31.0" layoutY="70.0" prefHeight="301.0" prefWidth="539.0" />
+      <Circle fill="WHITE" layoutX="55.0" layoutY="37.0" radius="24.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="32.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imagem7.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_confirmar" layoutX="202.0" layoutY="387.0" mnemonicParsing="false" onAction="#cadastrarConta" prefHeight="41.0" prefWidth="197.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-text-fill: black;" text="CONFIRMAR" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
