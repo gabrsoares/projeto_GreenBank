@@ -12,7 +12,7 @@ Este projeto foi desenvolvido como parte de um trabalho acadêmico para a matér
 - Vizualizar extrato de transações financeiras.
 
 ## 🚀 Tecnologias Utilizadas
-- **Linguagem de programação**: Java
+- **Linguagem de programação**: Java 22
 - **Interface gráfica**: JavaFX
 - **Banco de dados**: MySQL
 - **Servidor local**: XAMPP
@@ -24,7 +24,7 @@ Siga os passos abaixo para configurar e executar o projeto:
 ### 1️⃣ Pré-requisitos
 - Instale o [XAMPP](https://www.apachefriends.org/).
 - Instale o [NetBeans](https://netbeans.apache.org/).
-- Certifique-se de ter o Java JDK configurado.
+- Certifique-se de ter o Java JDK 22+ configurado.
 
 ### 2️⃣ Configuração do Banco de Dados
 1. Inicie o servidor MySQL e o APACHE pelo XAMPP.
